@@ -1,14 +1,21 @@
 {
   "site": {
     "name": "Kokoro Note",
-    "tagline": "まだ知らない「わたし」に出会う、やさしい診断室。",
+    "tagline": "自分、見つかる。やさしい診断サイト",
     "description": "恋愛、性格、仕事、人間関係など、気になるテーマから今のあなたをやさしく読み解く無料診断サイトです。",
     "url": "https://your-domain.com"
   },
+  "heroBanners": [
+    {"title":"恋愛依存度診断","subtitle":"好きになると、不安になりすぎる？","image":"assets/images/banner-love.svg","url":"tests/renai-izon.html"},
+    {"title":"隠れ性格診断","subtitle":"あなたに隠された本来の性格とは？","image":"assets/images/banner-personality.svg","url":"#"},
+    {"title":"向いている仕事診断","subtitle":"あなたに合う働き方と役割をチェック","image":"assets/images/banner-work.svg","url":"#"}
+  ],
   "tests": [
-    {"slug":"renai-izon","category":"Love","title":"恋愛依存度診断","socialTitle":"好きになると、不安になりすぎる？","description":"10個の質問から、あなたの恋愛のクセや不安になりやすいポイントをやさしく読み解きます。","image":"assets/images/renai-izon.svg","url":"tests/renai-izon.html"},
-    {"slug":"kakure-seikaku","category":"Personality","title":"隠れ性格診断","socialTitle":"周りに見せていない本当の性格","description":"ふだん人に見せている顔の奥にある、あなたらしい一面をやさしくチェックします。","image":"assets/images/kakure-seikaku.svg","url":"#"},
-    {"slug":"muiteiru-shigoto","category":"Work","title":"向いている仕事診断","socialTitle":"今の仕事、本当に合ってる？","description":"あなたの考え方や得意な動き方から、向いている仕事タイプを見つけます。","image":"assets/images/work-type.svg","url":"#"},
-    {"slug":"ningen-kankei-tsukare","category":"Relationship","title":"人間関係疲れ度診断","socialTitle":"人付き合いで疲れやすい？","description":"人との距離感や気疲れのしやすさを、10問でやさしくチェックします。","image":"assets/images/relationship.svg","url":"#"}
+    {"slug":"renai-izon","category":"恋愛","badge":"人気","views":"12.4万人が診断","title":"恋愛依存度診断","description":"10個の質問から、あなたの恋愛のクセや不安になりやすいポイントをやさしく読み解きます。","image":"assets/images/thumb-love.svg","url":"tests/renai-izon.html"},
+    {"slug":"kakure-seikaku","category":"性格","badge":"新着","views":"9.8万人が診断","title":"隠れ性格診断","description":"ふだん人に見せている顔の奥にある、あなたらしい一面をやさしくチェックします。","image":"assets/images/thumb-personality.svg","url":"#"},
+    {"slug":"muiteiru-shigoto","category":"仕事","badge":"おすすめ","views":"8.1万人が診断","title":"向いている仕事診断","description":"あなたの考え方や得意な動き方から、向いている仕事タイプを見つけます。","image":"assets/images/thumb-work.svg","url":"#"},
+    {"slug":"ningen-kankei-tsukare","category":"人間関係","badge":"人気","views":"7.3万人が診断","title":"人間関係疲れ度診断","description":"人との距離感や気疲れのしやすさを、10問でやさしくチェックします。","image":"assets/images/thumb-relationship.svg","url":"#"},
+    {"slug":"line-type","category":"恋愛","badge":"急上昇","views":"7.1万人が診断","title":"LINE返信タイプ診断","description":"あなたのLINEの距離感や返し方のクセをチェック。恋愛中の不安も見えてきます。","image":"assets/images/thumb-line.svg","url":"#"},
+    {"slug":"mental-age","category":"性格","badge":"人気","views":"6.5万人が診断","title":"精神年齢診断","description":"あなたの心は何歳？考え方や受け止め方から、今の心の年齢をやさしく読み解きます。","image":"assets/images/thumb-mental.svg","url":"#"}
   ]
 }
