@@ -1,62 +1,53 @@
 <!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kokoro Note｜恋愛・性格・仕事の無料診断サイト</title>
-  <meta name="description" content="恋愛、性格、仕事、人間関係など、気になるテーマから今のあなたをやさしく読み解く無料診断サイトです。" />
-  <meta name="robots" content="index,follow,max-image-preview:large" />
-  <link rel="canonical" href="https://your-domain.com/" />
-  <meta property="og:title" content="Kokoro Note｜まだ知らない「わたし」に出会う診断室" />
-  <meta property="og:description" content="恋愛、性格、仕事、人間関係。気になるテーマから、今のあなたをやさしく読み解きます。" />
-  <meta property="og:image" content="assets/images/hero.svg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="stylesheet" href="style.css" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Kokoro Note","alternateName":"恋愛・性格・仕事のやさしい診断室","url":"https://your-domain.com/"}</script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Kokoro Note｜恋愛・性格・仕事の無料診断サイト</title>
+<meta name="description" content="恋愛、性格、仕事、人間関係など、気になるテーマから今のあなたをやさしく読み解く無料診断サイトです。" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<link rel="canonical" href="https://your-domain.com/" />
+<meta property="og:title" content="Kokoro Note｜無料診断サイト" />
+<meta property="og:description" content="恋愛、性格、仕事、人間関係の無料診断サイトです。" />
+<meta property="og:image" content="assets/images/banner-love.svg" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <a class="logo" href="index.html">Kokoro Note</a>
-    <nav><a href="#featured">Tests</a><a href="#categories">Categories</a><a href="#about">About</a></nav>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div>
-        <p class="eyebrow">Free Shindan Magazine</p>
-        <h1>まだ知らない「わたし」に出会う、やさしい診断室。</h1>
-        <p class="lead">恋愛、性格、仕事、人間関係。気になるテーマから、今のあなたの気持ちやクセをそっと読み解いてみませんか？</p>
-        <div class="actions"><a class="button primary" href="#featured">人気の診断を見る</a><a class="button ghost" href="#about">このサイトについて</a></div>
-      </div>
-      <img class="hero-image" src="assets/images/hero.svg" alt="Kokoro Noteの柔らかな診断サイトイメージ" width="1200" height="630" />
-    </section>
-
-    <section id="featured" class="section">
-      <div class="section-heading"><p class="eyebrow">Featured</p><h2>人気の診断</h2><p>気になるテーマを選んで、今のあなたに近い答えを探してみてください。</p></div>
-      <div id="test-grid" class="card-grid"></div>
-    </section>
-
-    <section id="categories" class="section">
-      <div class="section-heading"><p class="eyebrow">Categories</p><h2>テーマから選ぶ</h2></div>
-      <div class="category-grid">
-        <a class="category-card" href="#featured"><span>Love</span><strong>恋愛診断</strong></a>
-        <a class="category-card" href="#featured"><span>Personality</span><strong>性格診断</strong></a>
-        <a class="category-card" href="#featured"><span>Work</span><strong>仕事診断</strong></a>
-        <a class="category-card" href="#featured"><span>Relationship</span><strong>人間関係診断</strong></a>
-      </div>
-    </section>
-
-    <section class="editor-pick">
-      <div><p class="eyebrow">Editor's Pick</p><h2>返信が遅いだけで、不安になってしまうあなたへ。</h2><p>恋愛中の小さな不安は、誰にでもあるもの。まずは10問で、あなたの恋愛のクセをそっと見つめてみませんか？</p></div>
-      <a class="button primary" href="tests/renai-izon.html">恋愛依存度診断へ</a>
-    </section>
-
-    <section id="about" class="section">
-      <div class="about-box"><p class="eyebrow">About</p><h2>Kokoro Noteについて</h2><p>このサイトは、恋愛や性格、仕事、人間関係について、少しだけ自分を見つめるきっかけを届ける診断サイトです。</p><p>結果は正解や不正解を決めるものではありません。今の気持ちを整理したり、自分のクセに気づいたりするための小さなヒントとして楽しんでください。</p></div>
-    </section>
-  </main>
-
-  <footer><p>© Kokoro Note</p><a href="privacy.html">Privacy</a><a href="contact.html">Contact</a></footer>
-  <script src="script.js"></script>
+<div class="top-stripe"></div>
+<header class="site-header">
+<p class="mini-tagline">自分、見つかる。モヤモヤ、解消。やさしい診断サイト</p>
+<a class="logo" href="index.html">Kokoro Note</a>
+<nav class="main-nav"><a href="index.html">TOP</a><a href="#ranking">診断</a><a href="#ranking">人気</a><a href="#categories">カテゴリ</a><a href="#about">コラム</a></nav>
+</header>
+<main class="page-wrap">
+<section class="hero-banners" id="hero-banners"></section>
+<div class="slider-dots"><span></span><span class="active"></span><span></span><span></span><span></span></div>
+<section class="section-block" id="ranking">
+<h2 class="section-title">人気の診断</h2>
+<p class="section-subtitle">いまよく読まれているおすすめ診断をまとめました。</p>
+<div class="chip-row"><button class="chip active">人気</button><button class="chip">新着</button><button class="chip">恋愛</button><button class="chip">性格</button><button class="chip">仕事</button><button class="chip">人間関係</button></div>
+<div id="test-grid" class="test-grid"></div>
+</section>
+<section class="section-block pale" id="categories">
+<h2 class="section-title">テーマから探す</h2>
+<div class="category-grid">
+<a class="category-box love" href="#ranking"><strong>恋愛診断</strong><span>恋愛のクセ、相性、LINE、依存度</span></a>
+<a class="category-box personality" href="#ranking"><strong>性格診断</strong><span>隠れた本音、魅力、心のタイプ</span></a>
+<a class="category-box work" href="#ranking"><strong>仕事診断</strong><span>向いている仕事、働き方、適職</span></a>
+<a class="category-box relationship" href="#ranking"><strong>人間関係診断</strong><span>距離感、疲れやすさ、立ち位置</span></a>
+</div>
+</section>
+<section class="recommend-strip">
+<div class="recommend-copy"><span class="recommend-label">今日のおすすめ</span><h3>返信が遅いだけで、不安になってしまうあなたへ。</h3><p>恋愛中の小さな不安は、誰にでもあるもの。まずは10問で、あなたの恋愛のクセをそっと見つめてみませんか。</p></div>
+<a class="cta-btn" href="tests/renai-izon.html">恋愛依存度診断へ</a>
+</section>
+<section class="section-block about-block" id="about">
+<h2 class="section-title">Kokoro Noteについて</h2>
+<p>このサイトは、恋愛や性格、仕事、人間関係について、少しだけ自分を見つめるきっかけを届ける診断サイトです。結果は正解や不正解を決めるものではなく、今の気持ちを整理するための小さなヒントとして楽しんでください。</p>
+</section>
+</main>
+<footer class="site-footer"><p>© Kokoro Note</p><a href="privacy.html">Privacy</a><a href="contact.html">Contact</a></footer>
+<script src="script.js"></script>
 </body>
 </html>
