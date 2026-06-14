@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>仕事タイプ診断｜5問でわかる向いている働き方</title><meta name="description" content="5個の質問で、あなたに合う働き方や得意な役割をやさしく診断します。" /><link rel="stylesheet" href="../style.css" /></head>
+<body class="quiz-page">
+<div class="top-stripe"></div>
+<header class="site-header"><p class="mini-tagline">自分、見つかる。モヤモヤ、解消。やさしい診断サイト</p><a class="logo" href="../index.html">Kokoro Note</a><nav class="main-nav"><a href="../index.html">TOP</a><a href="../index.html#ranking">人気</a><a href="../index.html#categories">カテゴリ</a></nav></header>
+<main>
+<section class="quiz-hero"><h1>仕事タイプ診断</h1><p class="lead">今の仕事、本当に合ってる？5個の質問から、あなたに向いている働き方や得意な役割をチェックします。</p><img src="../assets/images/thumb-work.svg" alt="仕事タイプ診断のイメージ画像" width="800" height="600" /></section>
+<div class="ad-slot">スポンサーリンク / AdSense placeholder</div><form id="quiz"></form><button id="showResult" class="cta-btn" type="button">結果を見る</button><section id="result" class="result-box"></section><div class="ad-slot">スポンサーリンク / 結果下広告</div>
+</main>
+<script>
+const questions=[
+{q:'仕事を始める時、まず何をする？',a:[['勢いよく動きながら考える','A'],['目的と流れを整理する','B'],['必要な情報を丁寧に集める','C'],['自分のやり方を考える','D']]},
+{q:'チームで任されると嬉しい役割は？',a:[['場を動かすリーダー役','A'],['全体を整える進行役','B'],['細部を詰める確認役','C'],['アイデアを出す企画役','D']]},
+{q:'トラブルが起きた時のあなたは？',a:[['まず動いて止血する','A'],['優先順位を決める','B'],['原因を細かく確認する','C'],['別の解決案を考える','D']]},
+{q:'集中しやすい環境は？',a:[['人と話しながら進める環境','A'],['ルールと期限が明確な環境','B'],['静かで落ち着いた環境','C'],['自由度が高い環境','D']]},
+{q:'仕事で一番大事にしたいことは？',a:[['成果とスピード','A'],['安定と信頼','B'],['正確さと質','C'],['創造性と自由','D']]}
+];
+const results={A:{name:'突破力のあるアクションタイプ',text:'あなたは考えすぎる前に動ける人です。スピード感が必要な場面や、停滞した状況を前に進める役割で力を発揮しやすいタイプ。勢いが魅力ですが、走りながらでも一度だけ目的を確認すると、成果がさらに安定します。'},B:{name:'全体を整えるマネジメントタイプ',text:'あなたは状況を整理し、周囲が動きやすい形にするのが得意です。進行管理、調整、チームの橋渡しで価値を出しやすいタイプ。自分だけで抱え込みすぎず、役割を分ける意識を持つとさらに強くなります。'},C:{name:'質を守るプロフェッショナルタイプ',text:'あなたは細かな違和感に気づける人です。確認、分析、品質管理、専門性が求められる仕事で強みが出やすいタイプ。完璧を求めすぎると疲れやすいので、十分に良いラインを決めて進めるのがポイントです。'},D:{name:'発想で広げるクリエイティブタイプ',text:'あなたは決められた型に収まるより、自分なりの切り口を見つける方が得意です。企画、改善、表現、アイデア出しで魅力が出やすいタイプ。自由だけでなく、締切や条件を味方にすると実現力が上がります。'}};
+const form=document.querySelector('#quiz');form.innerHTML=questions.map((item,i)=>`<div class="question"><h3>Q${i+1}. ${item.q}</h3>${item.a.map(([text,type])=>`<button type="button" class="option" data-q="${i}" data-type="${type}">${text}</button>`).join('')}</div>`).join('');
+document.addEventListener('click',e=>{if(!e.target.classList.contains('option'))return;const q=e.target.dataset.q;document.querySelectorAll(`.option[data-q="${q}"]`).forEach(b=>b.classList.remove('selected'));e.target.classList.add('selected');});
+document.querySelector('#showResult').addEventListener('click',()=>{const scores={A:0,B:0,C:0,D:0};document.querySelectorAll('.option.selected').forEach(b=>scores[b.dataset.type]++);if(document.querySelectorAll('.option.selected').length<questions.length){alert('すべての質問に答えてください。');return;}const top=Object.entries(scores).sort((a,b)=>b[1]-a[1])[0][0];const r=results[top];const box=document.querySelector('#result');box.innerHTML=`<h2>${r.name}</h2><p>${r.text}</p><p><a class="cta-btn" href="../index.html#ranking">他の診断を見る</a></p>`;box.classList.add('show');box.scrollIntoView({behavior:'smooth'});});
+</script>
+</body></html>
