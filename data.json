@@ -1,0 +1,14 @@
+{
+  "site": {
+    "name": "Kokoro Note",
+    "tagline": "まだ知らない「わたし」に出会う、やさしい診断室。",
+    "description": "恋愛、性格、仕事、人間関係など、気になるテーマから今のあなたをやさしく読み解く無料診断サイトです。",
+    "url": "https://your-domain.com"
+  },
+  "tests": [
+    {"slug":"renai-izon","category":"Love","title":"恋愛依存度診断","socialTitle":"好きになると、不安になりすぎる？","description":"10個の質問から、あなたの恋愛のクセや不安になりやすいポイントをやさしく読み解きます。","image":"assets/images/renai-izon.svg","url":"tests/renai-izon.html"},
+    {"slug":"kakure-seikaku","category":"Personality","title":"隠れ性格診断","socialTitle":"周りに見せていない本当の性格","description":"ふだん人に見せている顔の奥にある、あなたらしい一面をやさしくチェックします。","image":"assets/images/kakure-seikaku.svg","url":"#"},
+    {"slug":"muiteiru-shigoto","category":"Work","title":"向いている仕事診断","socialTitle":"今の仕事、本当に合ってる？","description":"あなたの考え方や得意な動き方から、向いている仕事タイプを見つけます。","image":"assets/images/work-type.svg","url":"#"},
+    {"slug":"ningen-kankei-tsukare","category":"Relationship","title":"人間関係疲れ度診断","socialTitle":"人付き合いで疲れやすい？","description":"人との距離感や気疲れのしやすさを、10問でやさしくチェックします。","image":"assets/images/relationship.svg","url":"#"}
+  ]
+}
