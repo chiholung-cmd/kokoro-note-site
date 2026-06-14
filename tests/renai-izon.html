@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>恋愛依存度診断｜10問でわかるあなたの恋愛傾向</title>
+  <meta name="description" content="10個の質問から、あなたの恋愛依存度や不安になりやすいポイントをやさしく診断します。" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://your-domain.com/tests/renai-izon.html" />
+  <meta property="og:title" content="好きになると、不安になりすぎる？恋愛依存度診断" />
+  <meta property="og:description" content="10問で、あなたの恋愛のクセをそっと読み解きます。" />
+  <meta property="og:image" content="../assets/images/renai-izon.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="quiz-page">
+<header class="site-header"><a class="logo" href="../index.html">Kokoro Note</a><nav><a href="../index.html#featured">Tests</a><a href="../index.html#about">About</a></nav></header>
+<main>
+  <section class="quiz-hero">
+    <p class="eyebrow">Love Shindan</p><h1>恋愛依存度診断</h1>
+    <p class="lead">好きになると不安になりやすい？それとも自然体でいられるタイプ？10個の質問から、あなたの恋愛のクセをそっと読み解きます。</p>
+    <img src="../assets/images/renai-izon.svg" alt="恋愛依存度診断のイメージ画像" width="1200" height="630" />
+  </section>
+
+  <div class="ad-slot">AdSense placeholder：承認後に広告コードをここへ入れる</div>
+  <form id="quiz"></form>
+  <button id="showResult" class="button primary" type="button">結果を見る</button>
+  <section id="result" class="result-box"></section>
+  <div class="ad-slot">AdSense placeholder：結果下広告</div>
+</main>
+<script>
+const questions=[
+ {q:'好きな人から返信が遅い時、あなたは？',a:[['すぐ不安になって何度も確認する','A'],['少し気になるけど待てる','B'],['忙しいのかなと思う','C'],['自分の時間を楽しむ','D']]},
+ {q:'恋人の予定が急に変わったら？',a:[['嫌われたのかもと考えてしまう','A'],['理由を聞いて安心したい','B'],['少し残念だけど切り替える','C'],['自分も別の予定を楽しむ','D']]},
+ {q:'恋愛中のあなたに近いのは？',a:[['相手中心になりやすい','A'],['相手の反応が気になる','B'],['自分のペースも大事にする','C'],['恋愛以外の時間もかなり大切','D']]},
+ {q:'相手のSNS更新を見ると？',a:[['誰といるのか気になってしまう','A'],['少しだけ気にする','B'],['見ても特に深く考えない','C'],['そもそもあまり見ない','D']]},
+ {q:'不安な気持ちになった時は？',a:[['すぐ連絡して確認したくなる','A'],['少し時間を置いてから話す','B'],['友達や趣味で気分転換する','C'],['一人で整理して落ち着ける','D']]},
+ {q:'恋人との理想の距離感は？',a:[['できるだけ一緒にいたい','A'],['毎日少しでも連絡したい','B'],['会う時は大切にしたい','C'],['一人の時間もかなり必要','D']]},
+ {q:'喧嘩した後のあなたは？',a:[['すぐ仲直りしないと不安','A'],['相手の気持ちを確認したい','B'],['少し時間を置いて話したい','C'],['落ち着くまで距離を置きたい','D']]},
+ {q:'恋愛で一番つらいのは？',a:[['相手の気持ちが見えないこと','A'],['連絡が少ないこと','B'],['自分らしくいられないこと','C'],['自由がなくなること','D']]},
+ {q:'好きな人に合わせることは？',a:[['かなり多い','A'],['少し多い','B'],['必要な時だけ','C'],['あまり合わせすぎない','D']]},
+ {q:'今のあなたに必要なのは？',a:[['安心できる言葉','A'],['素直に話す時間','B'],['自分を大切にする余裕','C'],['自由に過ごせる空間','D']]}
+];
+const results={
+ A:{name:'深く想いすぎるタイプ',text:'あなたは、好きな人をとても大切にできる人。だからこそ、相手の小さな変化にも心が揺れやすいところがあります。返信の遅さや言葉の温度まで気になってしまうのは、愛情が強い証拠でもあります。ただ、恋愛が生活の中心になりすぎると、自分自身の気持ちが置き去りになることも。まずは「確認したい」と思った時に、少しだけ深呼吸してみてください。あなたの魅力は、相手を想う優しさです。その優しさを、自分自身にも向けてあげることで、恋はもっと穏やかなものになります。'},
+ B:{name:'少し不安になりやすいタイプ',text:'あなたは恋愛に対してまっすぐで、相手との距離感を大切にしたい人です。不安になることはありますが、落ち着いて考える力も持っています。大切なのは、不安を我慢しすぎないこと。気持ちを責めるより、「今、自分は安心したいんだな」と認めるだけで、心は少し軽くなります。'},
+ C:{name:'自然体で向き合えるタイプ',text:'あなたは恋愛と自分の時間のバランスを比較的うまく取れる人です。相手を大切にしながらも、必要以上に振り回されすぎない落ち着きがあります。ただし、平気そうに見えすぎて本音が伝わりにくいことも。嬉しいことや寂しいことは、少しだけ言葉にしてみると関係がより温かくなります。'},
+ D:{name:'自由を大切にするタイプ',text:'あなたは恋愛だけに縛られず、自分の世界を大切にできる人です。相手に依存しすぎない姿勢は、とても健やかです。一方で、相手から見ると少しクールに感じられることも。好きという気持ちは、時々ちゃんと言葉や行動にして届けてあげると、関係がより安定します。'}
+};
+const form=document.querySelector('#quiz');
+form.innerHTML=questions.map((item,i)=>`<div class="question"><h3>Q${i+1}. ${item.q}</h3>${item.a.map(([text,type])=>`<button type="button" class="option" data-q="${i}" data-type="${type}">${text}</button>`).join('')}</div>`).join('');
+document.addEventListener('click',e=>{if(!e.target.classList.contains('option'))return;const q=e.target.dataset.q;document.querySelectorAll(`.option[data-q="${q}"]`).forEach(b=>b.classList.remove('selected'));e.target.classList.add('selected');});
+document.querySelector('#showResult').addEventListener('click',()=>{const scores={A:0,B:0,C:0,D:0};document.querySelectorAll('.option.selected').forEach(b=>scores[b.dataset.type]++);if(document.querySelectorAll('.option.selected').length<questions.length){alert('すべての質問に答えてください。');return;}const top=Object.entries(scores).sort((a,b)=>b[1]-a[1])[0][0];const r=results[top];const box=document.querySelector('#result');box.innerHTML=`<p class="eyebrow">Your Result</p><h2>${r.name}</h2><p>${r.text}</p><p><a class="button ghost" href="../index.html#featured">他の診断を見る</a></p>`;box.classList.add('show');box.scrollIntoView({behavior:'smooth'});});
+</script>
+</body>
+</html>
